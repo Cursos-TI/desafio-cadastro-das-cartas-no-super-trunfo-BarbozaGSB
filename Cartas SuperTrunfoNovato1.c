@@ -17,9 +17,9 @@ int main() {
     scanf("%s", Estado); // "%9s" para evitar overflow (erro "stack smashing detected");
 
     if (strcmp(Estado, "A") == 0) {  
-        printf("Você escolheu: %s\n", A);
+        printf("Você escolheu a carta: %s\n", A);
     } else if (strcmp(Estado, "B") == 0) {  
-        printf("Você escolheu: %s\n", B);
+        printf("Você escolheu a carta: %s\n", B);
     } else {
         printf("Escolha inválida\n");
     }
@@ -53,10 +53,42 @@ int main() {
         printf("Você escolheu: %s\n", B02);
     } else {
         printf("Escolha inválida\n");
-    }
+    } 
      
-    // Próxima etapa é solicitar ao usuário que insira os valores da carta escolhida;
+    // Próxima etapa é solicitar ao usuário que insira os dados da carta escolhida;
     // POPULAÇÃO, ÁEREA, PIB, NÚMERO DE PONTOS TURÍSTICOS;
+       
+    int populacao; // %d
+    float area; // %f
+    float PIB; // %f
+    int turismo; // %d 
+
+    printf("Agora que você já escolheu sua carta, vamos adicionar atributos à ela.\n");
+    printf("Você deverá inserir dados sobre a POPULAÇÃO, ÁREA, PIB e NÚMERO DE PONTOS TURÍSTICOS da cidade:\n");
+
+    if (strcmp(Cidade, "A01") == 0) {  
+        printf("Digite o número da população:\n");
+        scanf("%d", &populacao);
+        printf("A população é: %d \n", populacao);
+          printf("Agora digite a área:");
+          scanf("%f", &area);
+          printf("A area é: %f \n", area);
+            printf("Digite o PIB:\n");
+            scanf("%f", &PIB);
+            printf("O PIB é: %f \n", PIB);
+              printf("Digite o número de pontos turísticos:\n");
+              scanf("%d", &turismo);
+              printf("O número de pontos turísticos é: %d \n", turismo);
+        
+
+
+    } else if (strcmp(Cidade, "A02") == 0) {  
+        printf("");
+    } else if (strcmp(Cidade, "B01") == 0) {  
+        printf("Você escolheu a carta: %s\n", B01);
+    } else if (strcmp(Cidade, "B02") == 0) {  
+        printf("Você escolheu a carta: %s\n", B02);
+    } 
     
     return 0;
 }
