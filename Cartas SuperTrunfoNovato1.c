@@ -66,7 +66,7 @@ int main() {
     printf("Agora que você já escolheu sua carta, vamos adicionar atributos à ela.\n");
     printf("Você deverá inserir dados sobre a POPULAÇÃO, ÁREA, PIB e NÚMERO DE PONTOS TURÍSTICOS da cidade:\n");
 
-    if (strcmp(Cidade, "A01") == 0) {   // Pedir os dados e apresenta-los ao usuário;
+    if (strcmp(Cidade, "A01") == 0) {   // Pedir os dados e apresenta-los ao usuário de acordo com as escolhas iniciais;
         printf("Digite o número da população:\n");
         scanf("%d", &populacao);
         printf("A população é de: %d Pessoas.\n", populacao);
@@ -88,8 +88,6 @@ int main() {
                   printf("Número de pontos turísticos: %d \n", turismo);
 
         
-
-
     } else if (strcmp(Cidade, "A02") == 0) {  
         //printf("");
     } else if (strcmp(Cidade, "B01") == 0) {  
