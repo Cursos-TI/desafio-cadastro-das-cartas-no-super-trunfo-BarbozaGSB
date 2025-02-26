@@ -66,24 +66,32 @@ int main() {
     printf("Agora que você já escolheu sua carta, vamos adicionar atributos à ela.\n");
     printf("Você deverá inserir dados sobre a POPULAÇÃO, ÁREA, PIB e NÚMERO DE PONTOS TURÍSTICOS da cidade:\n");
 
-    if (strcmp(Cidade, "A01") == 0) {  
+    if (strcmp(Cidade, "A01") == 0) {   // Pedir os dados e apresenta-los ao usuário;
         printf("Digite o número da população:\n");
         scanf("%d", &populacao);
-        printf("A população é: %d \n", populacao);
-          printf("Agora digite a área:");
+        printf("A população é de: %d Pessoas.\n", populacao);
+          printf("Agora digite a área:\n");
           scanf("%f", &area);
-          printf("A area é: %f \n", area);
+          printf("A area é: %.2f km². \n", area);
             printf("Digite o PIB:\n");
-            scanf("%f", &PIB);
-            printf("O PIB é: %f \n", PIB);
+            scanf("%f", &PIB); 
+            printf("O PIB é: %.2f Bilhões de Reais. \n", PIB);
               printf("Digite o número de pontos turísticos:\n");
               scanf("%d", &turismo);
-              printf("O número de pontos turísticos é: %d \n", turismo);
+               printf("O número de pontos turísticos é: %d \n", turismo);
+                
+                 printf("Parabéns! Sua carta ficou assim:\n"); // Mostrar a carta com todas as escolhas;
+                  printf("Nome da Cidade: %s\n", A01); 
+                  printf("População: %.d\n", populacao);
+                  printf("Área: %.2f km².\n", area); 
+                  printf("PIB: %.2f bilhões de reais. \n", PIB);
+                  printf("Número de pontos turísticos: %d \n", turismo);
+
         
 
 
     } else if (strcmp(Cidade, "A02") == 0) {  
-        printf("");
+        //printf("");
     } else if (strcmp(Cidade, "B01") == 0) {  
         printf("Você escolheu a carta: %s\n", B01);
     } else if (strcmp(Cidade, "B02") == 0) {  
