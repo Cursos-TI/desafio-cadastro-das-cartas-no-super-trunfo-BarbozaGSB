@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("------ BEM VINDO AO DESAFIO SUPER TRUNFO NÍVEL AVENTUREIRO! ------\n");
+    printf("------ BEM VINDO AO DESAFIO SUPER TRUNFO NÍVEL MESTRE! ------\n");
 
     // Inserir as variáveis. 
     
@@ -95,7 +95,9 @@ int main() {
     printf("Número de pontos turísticos: %d\n", pturisticos02);
     printf("Densidade populacional: %.2f hab/km²\n", denspop02);
     printf("PIB per Capita: R$ %.2f\n", pibpercapta02);
-    printf("\n");
+    printf("\n"); 
+
+    // adicionar o super poder , comparar as cartas usando apenas operadores relacionais;
 
     return 0;
 }
